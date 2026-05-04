@@ -1,22 +1,40 @@
 :root {
-  --teal-900: #073d44;
-  --teal-700: #0b6e7a;
-  --teal-500: #1f8f8a;
-  --teal-100: #e6f3f3;
-  --teal-50: #f4fafa;
+  /* Brand burgundy (from logo) */
+  --brand-900: #4d0a00;
+  --brand-800: #66100a;
+  --brand-700: #801014;
+  --brand-500: #a82026;
+  --brand-100: #f6dcd8;
+  --brand-50:  #fdf3f1;
+
+  /* Accent cyan/teal (from logo) */
+  --accent-900: #00525c;
+  --accent-700: #007e8e;
+  --accent-500: #00b0c0;
+  --accent-300: #6cd3dd;
+  --accent-100: #d2eff3;
+  --accent-50:  #ecfafd;
+
+  /* Legacy aliases (kept so unmigrated rules still work) */
+  --teal-900: var(--brand-900);
+  --teal-700: var(--brand-700);
+  --teal-500: var(--brand-500);
+  --teal-100: var(--brand-100);
+  --teal-50:  var(--brand-50);
+
   --ink-900: #0f1d2d;
   --ink-700: #2a3b4f;
   --ink-500: #506478;
   --ink-300: #94a3b8;
   --bg: #ffffff;
-  --bg-soft: #f7faf9;
-  --line: #e3ebed;
+  --bg-soft: #fbf6f5;
+  --line: #ecdedb;
   --amber: #e0a458;
   --rose: #d2545c;
   --shadow-sm: 0 1px 2px rgba(15, 29, 45, 0.06), 0 1px 1px rgba(15, 29, 45, 0.04);
-  --shadow-md: 0 8px 24px rgba(11, 110, 122, 0.10), 0 2px 6px rgba(15, 29, 45, 0.05);
-  --shadow-lg: 0 24px 60px rgba(11, 110, 122, 0.18);
-  --shadow-xl: 0 30px 80px rgba(11, 110, 122, 0.22);
+  --shadow-md: 0 8px 24px rgba(128, 16, 20, 0.10), 0 2px 6px rgba(15, 29, 45, 0.05);
+  --shadow-lg: 0 24px 60px rgba(128, 16, 20, 0.18);
+  --shadow-xl: 0 30px 80px rgba(128, 16, 20, 0.22);
   --radius-sm: 8px;
   --radius: 14px;
   --radius-lg: 22px;
@@ -71,8 +89,8 @@ p { margin: 0 0 1em; }
 .reveal.is-in { opacity: 1; transform: none; }
 
 @keyframes pulse-ring {
-  0%   { box-shadow: 0 0 0 0 rgba(31,143,138,.45); }
-  100% { box-shadow: 0 0 0 18px rgba(31,143,138,0); }
+  0%   { box-shadow: 0 0 0 0 rgba(168,32,38,.45); }
+  100% { box-shadow: 0 0 0 18px rgba(168,32,38,0); }
 }
 @keyframes float-y {
   0%, 100% { transform: translateY(0); }
@@ -189,14 +207,14 @@ p { margin: 0 0 1em; }
 .hero {
   position: relative; overflow: hidden;
   background:
-    radial-gradient(1100px 540px at 88% -10%, rgba(31,143,138,.16), transparent 60%),
-    radial-gradient(900px 420px at -10% 110%, rgba(11,110,122,.10), transparent 60%),
-    linear-gradient(180deg, var(--teal-50) 0%, #fff 100%);
+    radial-gradient(1100px 540px at 88% -10%, rgba(0,176,192,.16), transparent 60%),
+    radial-gradient(900px 420px at -10% 110%, rgba(128,16,20,.10), transparent 60%),
+    linear-gradient(180deg, var(--brand-50) 0%, #fff 100%);
   padding: clamp(3rem, 7vw, 6rem) 0 clamp(3rem, 7vw, 5rem);
 }
 .hero::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
-  background-image: radial-gradient(rgba(11,110,122,.10) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(128,16,20,.10) 1px, transparent 1px);
   background-size: 26px 26px;
   -webkit-mask-image: radial-gradient(60% 60% at 80% 30%, #000 0%, transparent 70%);
           mask-image: radial-gradient(60% 60% at 80% 30%, #000 0%, transparent 70%);
@@ -204,9 +222,9 @@ p { margin: 0 0 1em; }
 }
 .hero-orbs { position: absolute; inset: 0; pointer-events: none; }
 .orb { position: absolute; border-radius: 50%; filter: blur(60px); opacity: .55; }
-.orb-1 { width: 320px; height: 320px; top: -80px; right: -60px; background: radial-gradient(circle, rgba(31,143,138,.5), transparent 70%); animation: float-y 9s ease-in-out infinite; }
-.orb-2 { width: 220px; height: 220px; bottom: -40px; left: -40px; background: radial-gradient(circle, rgba(11,110,122,.45), transparent 70%); animation: float-y 11s ease-in-out infinite reverse; }
-.orb-3 { width: 160px; height: 160px; top: 40%; left: 35%; background: radial-gradient(circle, rgba(224,164,88,.35), transparent 70%); animation: float-y 13s ease-in-out infinite; opacity: .35; }
+.orb-1 { width: 320px; height: 320px; top: -80px; right: -60px; background: radial-gradient(circle, rgba(0,176,192,.45), transparent 70%); animation: float-y 9s ease-in-out infinite; }
+.orb-2 { width: 220px; height: 220px; bottom: -40px; left: -40px; background: radial-gradient(circle, rgba(128,16,20,.40), transparent 70%); animation: float-y 11s ease-in-out infinite reverse; }
+.orb-3 { width: 160px; height: 160px; top: 40%; left: 35%; background: radial-gradient(circle, rgba(0,176,192,.35), transparent 70%); animation: float-y 13s ease-in-out infinite; opacity: .4; }
 
 .hero-grid {
   position: relative;
@@ -215,10 +233,13 @@ p { margin: 0 0 1em; }
 }
 .eyebrow {
   display: inline-block; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--teal-700); font-weight: 700; margin: 0 0 .85rem;
-  padding: .3rem .75rem; background: var(--teal-100); border-radius: 999px;
+  color: var(--accent-700); font-weight: 700; margin: 0 0 .85rem;
+  padding: .3rem .75rem;
+  background: var(--accent-100);
+  border: 1px solid color-mix(in srgb, var(--accent-500) 18%, transparent);
+  border-radius: 999px;
 }
-.accent { color: var(--teal-700); font-style: italic; }
+.accent { color: var(--accent-700); font-style: italic; }
 .lede { font-size: 1.1rem; color: var(--ink-700); max-width: 56ch; }
 
 .hero-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin: 1.25rem 0 1.75rem; }
@@ -233,8 +254,9 @@ p { margin: 0 0 1em; }
 .trust-badge:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .trust-mark {
   width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
-  background: var(--teal-100); color: var(--teal-700);
+  background: var(--brand-100); color: var(--brand-700);
 }
+.trust-badge:nth-child(2) .trust-mark { background: var(--accent-100); color: var(--accent-700); }
 .trust-badge strong { display: block; color: var(--ink-900); font-size: .9rem; line-height: 1.2; }
 .trust-badge span { color: var(--ink-500); font-size: .78rem; }
 
@@ -302,11 +324,12 @@ p { margin: 0 0 1em; }
 }
 .v-icon {
   width: 44px; height: 44px; border-radius: 12px; flex: none;
-  background: var(--teal-100); color: var(--teal-700);
+  background: var(--accent-100); color: var(--accent-700);
   display: grid; place-items: center;
   transition: transform var(--transition), background var(--transition);
 }
-.value-grid li:hover .v-icon { transform: rotate(-6deg) scale(1.05); background: var(--teal-50); }
+.value-grid li:nth-child(2n) .v-icon { background: var(--brand-100); color: var(--brand-700); }
+.value-grid li:hover .v-icon { transform: rotate(-6deg) scale(1.05); }
 .value-grid strong { display: block; color: var(--ink-900); font-size: .95rem; line-height: 1.25; }
 .value-grid span { color: var(--ink-500); font-size: .82rem; }
 
@@ -320,8 +343,8 @@ p { margin: 0 0 1em; }
 .section-head h2::after {
   content: ""; position: absolute; left: 50%; bottom: 0;
   transform: translateX(-50%);
-  width: 56px; height: 3px; border-radius: 2px;
-  background: linear-gradient(90deg, var(--teal-500), var(--teal-700));
+  width: 64px; height: 3px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--brand-700), var(--accent-500));
 }
 
 .two-col {
@@ -365,7 +388,7 @@ p { margin: 0 0 1em; }
 .media-banner img { width: 100%; height: 100%; object-fit: cover; }
 .media-banner::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(120deg, rgba(7,61,68,.35) 0%, rgba(7,61,68,.05) 50%, transparent 100%);
+  background: linear-gradient(120deg, rgba(77,10,0,.35) 0%, rgba(77,10,0,.05) 50%, transparent 100%);
 }
 .banner-overlay {
   position: absolute; left: 6%; bottom: 8%; color: #fff;
@@ -394,14 +417,15 @@ p { margin: 0 0 1em; }
 
 .stat-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-  background: linear-gradient(135deg, var(--teal-700), var(--teal-900)); color: #fff;
+  background: linear-gradient(135deg, var(--brand-700) 0%, var(--brand-900) 60%, var(--accent-900) 100%);
+  color: #fff;
   border-radius: var(--radius-lg); padding: clamp(1.25rem, 2vw, 1.75rem);
   margin-top: 1.5rem;
   position: relative; overflow: hidden;
 }
 .stat-grid::before {
   content: ""; position: absolute; inset: -50%; pointer-events: none;
-  background: radial-gradient(circle at 70% 30%, rgba(255,255,255,.08), transparent 50%);
+  background: radial-gradient(circle at 80% 20%, rgba(0,176,192,.20), transparent 55%);
 }
 .stat {
   position: relative;
@@ -425,15 +449,20 @@ p { margin: 0 0 1em; }
 .pillar:hover { transform: translateX(2px); box-shadow: var(--shadow-md); }
 .pillar-icon {
   width: 44px; height: 44px; border-radius: 12px;
-  background: linear-gradient(135deg, var(--teal-100), #fff);
-  color: var(--teal-700); display: grid; place-items: center;
-  border: 1px solid var(--teal-100);
+  background: linear-gradient(135deg, var(--brand-100), #fff);
+  color: var(--brand-700); display: grid; place-items: center;
+  border: 1px solid var(--brand-100);
+}
+.pillar:nth-child(odd) .pillar-icon {
+  background: linear-gradient(135deg, var(--accent-100), #fff);
+  color: var(--accent-700); border-color: var(--accent-100);
 }
 .pillar h3 {
-  margin: 0 0 .35rem; color: var(--teal-700);
+  margin: 0 0 .35rem; color: var(--brand-700);
   font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
   font-family: 'Inter', sans-serif; font-weight: 700;
 }
+.pillar:nth-child(odd) h3 { color: var(--accent-700); }
 .pillar p { margin: 0; color: var(--ink-700); }
 
 /* ---------------- Diamond Methodology ---------------- */
@@ -448,7 +477,7 @@ p { margin: 0 0 1em; }
 }
 .diamond-shape::before {
   content: ""; position: absolute; inset: 0;
-  background: radial-gradient(circle at center, rgba(31,143,138,.14), transparent 65%);
+  background: radial-gradient(circle at center, rgba(168,32,38,.14), transparent 65%);
   border-radius: 50%;
   animation: pulse-dot 4s ease-in-out infinite;
 }
@@ -468,11 +497,15 @@ p { margin: 0 0 1em; }
 .diamond-points li::before {
   content: counter(dpt, decimal-leading-zero);
   width: 40px; height: 40px; border-radius: 12px;
-  background: linear-gradient(135deg, var(--teal-100), #fff);
-  color: var(--teal-700); font-weight: 700; font-size: .9rem;
+  background: linear-gradient(135deg, var(--brand-100), #fff);
+  color: var(--brand-700); font-weight: 700; font-size: .9rem;
   display: grid; place-items: center;
-  border: 1px solid var(--teal-100);
+  border: 1px solid var(--brand-100);
   transition: transform var(--transition);
+}
+.diamond-points li:nth-child(2n)::before {
+  background: linear-gradient(135deg, var(--accent-100), #fff);
+  color: var(--accent-700); border-color: var(--accent-100);
 }
 .diamond-points li:hover { transform: translateX(4px); box-shadow: var(--shadow-md); }
 .diamond-points li:hover::before { transform: rotate(-6deg) scale(1.06); }
@@ -529,7 +562,7 @@ p { margin: 0 0 1em; }
 .team-bio {
   position: absolute; left: 0; right: 0; bottom: 0;
   padding: 1rem;
-  background: linear-gradient(180deg, transparent 0%, rgba(7,61,68,.85) 60%, rgba(7,61,68,.95) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(77,10,0,.85) 60%, rgba(77,10,0,.95) 100%);
   color: #fff;
   transform: translateY(100%);
   transition: transform 500ms var(--ease-out);
@@ -651,8 +684,8 @@ p { margin: 0 0 1em; }
 .cta-band {
   position: relative;
   background:
-    radial-gradient(900px 400px at 80% 20%, rgba(255,255,255,.10), transparent 60%),
-    linear-gradient(135deg, var(--teal-700), var(--teal-900));
+    radial-gradient(900px 400px at 88% 18%, rgba(0,176,192,.28), transparent 62%),
+    linear-gradient(135deg, var(--brand-700) 0%, var(--brand-900) 70%, var(--accent-900) 110%);
   color: #fff;
   padding: clamp(2.5rem, 6vw, 4rem) 0;
   overflow: hidden;
@@ -703,7 +736,7 @@ p { margin: 0 0 1em; }
 .contact-form select:focus,
 .contact-form textarea:focus {
   outline: none; border-color: var(--teal-500);
-  box-shadow: 0 0 0 4px rgba(31, 143, 138, .15);
+  box-shadow: 0 0 0 4px rgba(168, 32, 38, .15);
 }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .form-note { font-size: .8rem; color: var(--ink-500); margin: 0; }
@@ -733,7 +766,7 @@ p { margin: 0 0 1em; }
   position: fixed; bottom: 1.25rem; right: 1.25rem; z-index: 60;
   display: inline-flex; align-items: center; gap: .55rem;
   padding: .85rem 1.15rem; border-radius: 999px;
-  background: linear-gradient(135deg, var(--teal-700), var(--teal-500));
+  background: linear-gradient(135deg, var(--brand-700), var(--brand-500));
   color: #fff; font-weight: 600; font-size: .92rem;
   box-shadow: var(--shadow-lg);
   transform: translateY(20px) scale(.94); opacity: 0; pointer-events: none;
