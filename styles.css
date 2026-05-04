@@ -165,6 +165,11 @@ p { margin: 0 0 1em; }
   font-size: .9rem;
   font-weight: 600;
 }
+/* Beat the .primary-nav a color rule so the CTA label stays white */
+.primary-nav a.nav-cta,
+.primary-nav a.nav-cta:hover,
+.primary-nav a.nav-cta.active { color: #fff; }
+.primary-nav a.nav-cta::after { display: none; }
 .nav-cta::before {
   content: ""; display: inline-block;
   width: 8px; height: 8px; border-radius: 50%;
