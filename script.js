@@ -44,6 +44,75 @@
     sections.forEach((s) => observer.observe(s));
   }
 
+  // Reveal-on-scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const delay = parseInt(el.dataset.delay || '0', 10);
+            el.style.setProperty('--rev-delay', delay);
+            el.classList.add('is-in');
+            io.unobserve(el);
+          });
+        },
+        { rootMargin: '0px 0px -8% 0px', threshold: 0.05 }
+      );
+      revealEls.forEach((el) => io.observe(el));
+    } else {
+      revealEls.forEach((el) => el.classList.add('is-in'));
+    }
+  }
+
+  // Stat counters
+  const counters = document.querySelectorAll('[data-count]');
+  if (counters.length && 'IntersectionObserver' in window) {
+    const formatNum = (n) => {
+      if (n >= 1000) return n.toLocaleString('en-US');
+      return String(n);
+    };
+    const animateCount = (el) => {
+      const target = parseInt(el.dataset.count, 10) || 0;
+      const suffix = el.dataset.suffix || '';
+      const duration = 1400;
+      const start = performance.now();
+      const step = (now) => {
+        const t = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - t, 3);
+        const value = Math.round(target * eased);
+        el.textContent = formatNum(value) + suffix;
+        if (t < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    const cio = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          animateCount(entry.target);
+          cio.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.4 }
+    );
+    counters.forEach((el) => cio.observe(el));
+  }
+
+  // Header shadow + floating CTA visibility on scroll
+  const header = document.querySelector('.site-header');
+  const floatingCta = document.querySelector('.floating-cta');
+  const onScroll = () => {
+    const y = window.scrollY || window.pageYOffset;
+    if (header) header.classList.toggle('scrolled', y > 8);
+    if (floatingCta) floatingCta.classList.toggle('show', y > 600);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
