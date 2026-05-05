@@ -1,3 +1,19 @@
+/*
+Theme Name: Precision Health Clinix
+Theme URI: https://phcx.net/
+Author: Precision Health Clinix
+Author URI: https://phcx.net/
+Description: Custom WordPress theme for Precision Health Clinix &mdash; a precision medicine clinic combining advanced diagnostics, DNA insights, biomarker analysis, and lifestyle medicine. Single-page marketing site with on-page anchors for About, Team, Homecare, Telehealth, and Contact.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: phcx
+Tags: healthcare, clinic, one-page, custom-colors, custom-menu, responsive
+*/
+
 :root {
   /* Brand burgundy (from logo) */
   --brand-900: #4d0a00;

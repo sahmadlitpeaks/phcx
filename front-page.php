@@ -1,43 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Precision Health Clinix &mdash; Personalised, Science-Led Healthcare</title>
-  <meta name="description" content="Precision Health Clinix combines advanced diagnostics, DNA insights, biomarker analysis, and lifestyle medicine to deliver care tailored to your biology, goals, and long-term health needs." />
-  <meta name="theme-color" content="#801014" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+<?php
+/**
+ * Front page (single-page marketing site).
+ *
+ * @package phcx
+ */
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Precision Health Clinix home">
-        <img class="brand-logo" src="assets/img/logo.png" alt="Precision Health Clinix" width="220" />
-      </a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#homecare">Homecare Services</a></li>
-          <li><a href="#telehealth">Telehealth Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-        <a href="#contact" class="btn btn-primary nav-cta">Book a Visit</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
+get_header();
+?>
     <section class="hero">
       <div class="hero-orbs" aria-hidden="true">
         <span class="orb orb-1"></span>
@@ -50,8 +19,8 @@
           <h1 class="reveal" data-delay="80">Tailored healthcare solutions <span class="accent">for your long-term health needs.</span></h1>
           <p class="lede reveal" data-delay="160">Precision Health Clinix is a precision medicine clinic combining advanced diagnostics, DNA insights, biomarker analysis, clinical assessment, and lifestyle medicine to help each patient receive care that is tailored to their biology, goals, and long-term health needs.</p>
           <div class="hero-actions reveal" data-delay="240">
-            <a href="#contact" class="btn btn-primary btn-pulse">Schedule a Consultation</a>
-            <a href="#clinic" class="btn btn-ghost">Explore Services <span class="arrow">&rarr;</span></a>
+            <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="btn btn-primary btn-pulse">Schedule a Consultation</a>
+            <a href="<?php echo esc_url( home_url( '/#clinic' ) ); ?>" class="btn btn-ghost">Explore Services <span class="arrow">&rarr;</span></a>
           </div>
           <div class="hero-trust reveal" data-delay="320">
             <div class="trust-badge">
@@ -76,7 +45,7 @@
         </div>
 
         <div class="hero-media reveal" data-delay="120">
-          <img src="assets/img/hero.png" alt="Precision Health Clinix care experience" loading="eager" />
+          <img src="<?php echo esc_url( phcx_asset( 'assets/img/hero.png' ) ); ?>" alt="Precision Health Clinix care experience" loading="eager" />
           <div class="hero-floater hero-floater-1" aria-hidden="true">
             <span class="floater-dot"></span>
             <div>
@@ -123,7 +92,7 @@
     <section id="about" class="section">
       <div class="container two-col">
         <div class="media-frame reveal">
-          <img src="assets/img/about.png" alt="Clinician consulting with a patient" loading="lazy" />
+          <img src="<?php echo esc_url( phcx_asset( 'assets/img/about.png' ) ); ?>" alt="Clinician consulting with a patient" loading="lazy" />
         </div>
         <div class="reveal" data-delay="120">
           <p class="eyebrow">About Us</p>
@@ -144,7 +113,7 @@
     <section class="section section-alt" id="vision">
       <div class="container two-col reverse">
         <div class="media-frame reveal">
-          <img src="assets/img/vision.png" alt="Our vision for precision health" loading="lazy" />
+          <img src="<?php echo esc_url( phcx_asset( 'assets/img/vision.png' ) ); ?>" alt="Our vision for precision health" loading="lazy" />
         </div>
         <div class="reveal" data-delay="120">
           <p class="eyebrow">Our Goal &amp; Vision</p>
@@ -182,7 +151,7 @@
         <div class="team-grid">
           <article class="team-card reveal" style="--team-accent:#801014">
             <div class="team-photo">
-              <img src="assets/img/dr-sherif.jpg" alt="Dr. Sharif Al Haj" loading="lazy" />
+              <img src="<?php echo esc_url( phcx_asset( 'assets/img/dr-sherif.jpg' ) ); ?>" alt="Dr. Sharif Al Haj" loading="lazy" />
               <div class="team-bio">
                 <p>DHA-licensed Medical Doctor with 7+ years of experience in emergency, inpatient, and outpatient care &mdash; certifying in Lifestyle Medicine.</p>
               </div>
@@ -196,7 +165,7 @@
 
           <article class="team-card reveal" data-delay="80" style="--team-accent:#00b0c0">
             <div class="team-photo">
-              <img src="assets/img/tetiana.jpg" alt="Tetiana Pholka" loading="lazy" />
+              <img src="<?php echo esc_url( phcx_asset( 'assets/img/tetiana.jpg' ) ); ?>" alt="Tetiana Pholka" loading="lazy" />
               <div class="team-bio">
                 <p>Master&rsquo;s in physiotherapy, specializing in musculoskeletal and neurological rehabilitation &mdash; myofascial release, dry needling, and tailored exercise plans.</p>
               </div>
@@ -210,7 +179,7 @@
 
           <article class="team-card reveal" data-delay="160" style="--team-accent:#e0a458">
             <div class="team-photo">
-              <img src="assets/img/dr-omar.jpg" alt="Omar Abdelrahman" loading="lazy" />
+              <img src="<?php echo esc_url( phcx_asset( 'assets/img/dr-omar.jpg' ) ); ?>" alt="Omar Abdelrahman" loading="lazy" />
               <div class="team-bio">
                 <p>DHA &amp; MOH licensed Clinical Dietitian. Medical nutrition therapy for obesity, metabolic disorders, and gut health.</p>
               </div>
@@ -224,7 +193,7 @@
 
           <article class="team-card reveal" data-delay="240" style="--team-accent:#a05195">
             <div class="team-photo">
-              <img src="assets/img/sana.png" alt="Sana El Banna" loading="lazy" />
+              <img src="<?php echo esc_url( phcx_asset( 'assets/img/sana.png' ) ); ?>" alt="Sana El Banna" loading="lazy" />
               <div class="team-bio">
                 <p>Registered nurse and certified functional health coach with a Master&rsquo;s in Public Health &mdash; coordinating seamless wellness journeys.</p>
               </div>
@@ -289,7 +258,7 @@
         </header>
 
         <div class="media-banner reveal">
-          <img src="assets/img/clinic-services.png" alt="Precision Health Clinix in-clinic services" loading="lazy" />
+          <img src="<?php echo esc_url( phcx_asset( 'assets/img/clinic-services.png' ) ); ?>" alt="Precision Health Clinix in-clinic services" loading="lazy" />
           <div class="banner-overlay">
             <span class="banner-eyebrow">Precision Health Clinix</span>
             <strong>Inside our clinic</strong>
@@ -306,7 +275,7 @@
             <div class="service-body">
               <h3>Doctor Consultation &amp; Precision Medicine Assessment</h3>
               <p>A comprehensive consultation reviewing health history, symptoms, lifestyle, wellness goals, and diagnostic results &mdash; with recommendations for testing, DNA analysis, biomarkers, lifestyle interventions, IV therapy, or specialty care pathways.</p>
-              <a class="service-link" href="#contact">Book consultation <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book consultation <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -319,7 +288,7 @@
             <div class="service-body">
               <h3>DNA Testing &amp; Genetic Reports</h3>
               <p>Specialized DNA testing through internationally accredited laboratories. Reports may offer insights into nutrition, metabolism, fitness response, vitamin needs, weight tendencies, wellness optimization, and selected health predispositions.</p>
-              <a class="service-link" href="#contact">Learn more <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Learn more <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -332,7 +301,7 @@
             <div class="service-body">
               <h3>Customizable IV Therapy</h3>
               <p>Clinically guided IV therapy blends tailored to each patient&rsquo;s needs &mdash; supporting hydration, energy, mineral balance, immune wellness, recovery, vitality, and overall optimization based on goals and clinical suitability.</p>
-              <a class="service-link" href="#contact">Browse blends <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Browse blends <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -345,7 +314,7 @@
             <div class="service-body">
               <h3>Peptide Therapy Consultation</h3>
               <p>A medically supervised consultation to assess suitability, goals, and safety. Peptide-based protocols may be considered as part of personalized wellness plans supporting recovery, metabolism, healthy aging, performance, and body optimization.</p>
-              <a class="service-link" href="#contact">Speak to a doctor <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Speak to a doctor <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -358,7 +327,7 @@
             <div class="service-body">
               <h3>Lifestyle Management</h3>
               <p>Personalized guidance across sleep, stress, nutrition, movement, recovery, energy, and daily habits &mdash; designed to create sustainable changes that support prevention, metabolic health, performance, and wellbeing.</p>
-              <a class="service-link" href="#contact">Start your plan <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Start your plan <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -371,7 +340,7 @@
             <div class="service-body">
               <h3>Weight &amp; Metabolic Management</h3>
               <p>Personalized weight loss, fat loss, metabolic health, and nutrition support. Work with our clinical team and dietitian on tailored guidance, meal plans, body composition goals, insulin resistance support, and condition-specific nutrition plans.</p>
-              <a class="service-link" href="#contact">Talk to a dietitian <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Talk to a dietitian <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -384,7 +353,7 @@
             <div class="service-body">
               <h3>Sample Collection</h3>
               <p>Professional sample collection for blood tests, DNA testing, and other laboratory investigations &mdash; coordinated through approved laboratory partners as part of consultations, wellness programs, or ongoing monitoring.</p>
-              <a class="service-link" href="#contact">Schedule collection <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Schedule collection <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -397,7 +366,7 @@
             <div class="service-body">
               <h3>Nursing Services</h3>
               <p>Clinical support including vital sign checks, medication support, IV administration, sample collection, patient education, and follow-up care &mdash; coordinated with the medical team.</p>
-              <a class="service-link" href="#contact">Request a nurse <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Request a nurse <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
         </div>
@@ -422,7 +391,7 @@
             <div class="service-body">
               <h3>Home Doctor Visit</h3>
               <p>A home-based medical assessment and consultation for patients who prefer home care, require convenient medical support, or need an initial evaluation before further treatment, testing, or referral.</p>
-              <a class="service-link" href="#contact">Book home visit <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book home visit <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -435,7 +404,7 @@
             <div class="service-body">
               <h3>Home Nursing Care</h3>
               <p>Professional home nursing including vital sign monitoring, medication support, IV administration, patient education, recovery support, and ongoing care coordination in a safe and comfortable setting.</p>
-              <a class="service-link" href="#contact">Arrange a nurse <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Arrange a nurse <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -448,7 +417,7 @@
             <div class="service-body">
               <h3>Home Sample Collection</h3>
               <p>Home collection for blood tests, DNA testing, and other laboratory investigations, with professional sample handling and coordination through approved laboratory partners.</p>
-              <a class="service-link" href="#contact">Schedule collection <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Schedule collection <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -461,7 +430,7 @@
             <div class="service-body">
               <h3>Home IV Therapy</h3>
               <p>Selected IV therapy services administered at home by qualified healthcare professionals. IV blends may support hydration, energy, recovery, immune wellness, mineral balance, and overall wellbeing based on clinical suitability.</p>
-              <a class="service-link" href="#contact">Browse blends <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Browse blends <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -474,7 +443,7 @@
             <div class="service-body">
               <h3>Home Hydrogen Inhalation Therapy</h3>
               <p>Access to hydrogen inhalation therapy in a comfortable home setting, offered as part of a wellness, recovery, or lifestyle optimization plan based on patient goals and suitability.</p>
-              <a class="service-link" href="#contact">Learn more <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Learn more <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -487,7 +456,7 @@
             <div class="service-body">
               <h3>Home Laser Pain Therapy</h3>
               <p>A home-based therapy using clinical-grade local red-light therapy to support patients experiencing injuries, pain, inflammation-related discomfort, or recovery needs &mdash; recommended as part of pain management or rehabilitation.</p>
-              <a class="service-link" href="#contact">Book a session <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book a session <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -500,7 +469,7 @@
             <div class="service-body">
               <h3>Home Physiotherapy</h3>
               <p>Home physiotherapy for rehabilitation, mobility improvement, pain management, post-injury recovery, and functional movement support &mdash; delivered by qualified professionals and tailored to your condition and goals.</p>
-              <a class="service-link" href="#contact">Schedule a session <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Schedule a session <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
         </div>
@@ -510,13 +479,13 @@
     <section id="telehealth" class="section">
       <div class="container two-col reverse">
         <div class="media-frame reveal">
-          <img src="assets/img/telehealth.png" alt="Telehealth consultation" loading="lazy" />
+          <img src="<?php echo esc_url( phcx_asset( 'assets/img/telehealth.png' ) ); ?>" alt="Telehealth consultation" loading="lazy" />
         </div>
         <div class="reveal" data-delay="120">
           <p class="eyebrow">Telehealth Services</p>
           <h2>Expert care, anywhere in the world.</h2>
           <p>Precision Health Clinix offers telehealth services for patients who prefer remote access to medical, wellness, nutrition, and follow-up consultations. Telehealth allows patients to receive expert guidance, review results, and continue their care plan conveniently from anywhere in the world.</p>
-          <a href="#contact" class="btn btn-primary">Request a Telehealth Visit</a>
+          <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="btn btn-primary">Request a Telehealth Visit</a>
         </div>
       </div>
 
@@ -531,7 +500,7 @@
             <div class="service-body">
               <h3>Online Doctor Consultation</h3>
               <p>Remote access to doctors for medical advice, follow-up care, treatment planning, and review of health concerns or diagnostic results.</p>
-              <a class="service-link" href="#contact">Book a video visit <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book a video visit <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -544,7 +513,7 @@
             <div class="service-body">
               <h3>DNA Test Result Review</h3>
               <p>A guided review of DNA results to help patients understand how their genetic report may relate to nutrition, metabolism, wellness, fitness response, and preventive health planning.</p>
-              <a class="service-link" href="#contact">Review my results <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Review my results <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -557,7 +526,7 @@
             <div class="service-body">
               <h3>Online Dietitian Consultation</h3>
               <p>Remote nutrition consultation for personalized guidance, meal planning, weight management, fat loss, chronic-condition diets, and sustainable lifestyle change.</p>
-              <a class="service-link" href="#contact">Talk to a dietitian <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Talk to a dietitian <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -570,7 +539,7 @@
             <div class="service-body">
               <h3>Lifestyle &amp; Wellness Consultation</h3>
               <p>Online support across sleep, stress, nutrition, physical activity, recovery, and daily-routine optimization to support sustainable wellbeing.</p>
-              <a class="service-link" href="#contact">Start coaching <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Start coaching <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -583,7 +552,7 @@
             <div class="service-body">
               <h3>Weight &amp; Metabolic Follow-Up</h3>
               <p>Remote progress reviews for patients enrolled in weight or metabolic programs &mdash; including meal-plan adjustments, nutrition guidance, treatment follow-up, and ongoing accountability.</p>
-              <a class="service-link" href="#contact">Schedule follow-up <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Schedule follow-up <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -596,7 +565,7 @@
             <div class="service-body">
               <h3>Treatment Plan Review</h3>
               <p>A remote consultation to review the patient&rsquo;s personalized care plan, discuss recommendations, progress, test results, next steps, and any required adjustments.</p>
-              <a class="service-link" href="#contact">Review my plan <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Review my plan <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
         </div>
@@ -611,7 +580,7 @@
           <p>Talk to a DHA-licensed clinician about a personalised plan built around your DNA, biomarkers, and goals.</p>
         </div>
         <div class="cta-band-actions">
-          <a href="#contact" class="btn btn-light">Book a Consultation</a>
+          <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="btn btn-light">Book a Consultation</a>
           <a href="tel:+97100000000" class="btn btn-outline-light">Call us</a>
         </div>
       </div>
@@ -692,48 +661,4 @@
         </form>
       </div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand brand-footer">
-          <img class="brand-logo" src="assets/img/logo.png" alt="Precision Health Clinix" />
-        </div>
-        <p>Personalised, science-led healthcare combining advanced diagnostics, DNA insights, and lifestyle medicine.</p>
-      </div>
-      <nav aria-label="Footer">
-        <strong>Explore</strong>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#homecare">Homecare Services</a></li>
-          <li><a href="#telehealth">Telehealth Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div>
-        <strong>Get in touch</strong>
-        <ul class="plain-list">
-          <li><a href="tel:+97100000000">+971 00 000 0000</a></li>
-          <li><a href="mailto:care@phcx.net">care@phcx.net</a></li>
-          <li>Dubai, United Arab Emirates</li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <small>&copy; <span id="year"></span> Precision Health Clinix. All rights reserved.</small>
-      <small>DHA-Licensed &middot; Internationally accredited laboratory partners</small>
-    </div>
-  </footer>
-
-  <a href="#contact" class="floating-cta" aria-label="Book a consultation">
-    <span class="fc-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    </span>
-    <span class="fc-label">Book Now</span>
-  </a>
-
-  <script src="script.js" defer></script>
-</body>
-</html>
+  <?php get_footer(); ?>
