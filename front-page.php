@@ -581,7 +581,7 @@ get_header();
         </div>
         <div class="cta-band-actions">
           <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="btn btn-light">Book a Consultation</a>
-          <a href="tel:+97100000000" class="btn btn-outline-light">Call us</a>
+          <a href="tel:+971 4 579 4300" class="btn btn-outline-light">Call us</a>
         </div>
       </div>
     </section>
@@ -598,13 +598,13 @@ get_header();
               <span class="contact-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </span>
-              <div><strong>Phone</strong><a href="tel:+97100000000">+971 00 000 0000</a></div>
+              <div><strong>Phone</strong><a href="tel:+971 4 579 4300">+971 4 579 4300</a></div>
             </li>
             <li>
               <span class="contact-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
               </span>
-              <div><strong>Email</strong><a href="mailto:care@phcx.net">care@phcx.net</a></div>
+              <div><strong>Email</strong><a href="mailto:customercare@prcnhealth.com">customercare@prcnhealth.com</a></div>
             </li>
             <li>
               <span class="contact-icon" aria-hidden="true">
@@ -616,7 +616,7 @@ get_header();
               <span class="contact-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
               </span>
-              <div><strong>Hours</strong><span>Mon &ndash; Sat: 9:00 &ndash; 19:00<br/>Telehealth available outside clinic hours</span></div>
+              <div><strong>Hours</strong><span>10am - 6pm (Monday to Saturday)</span></div>
             </li>
           </ul>
         </div>
