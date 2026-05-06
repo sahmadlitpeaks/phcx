@@ -38,8 +38,8 @@
 		<div>
 			<strong><?php esc_html_e( 'Get in touch', 'phcx' ); ?></strong>
 			<ul class="plain-list">
-				<li><a href="tel:+97100000000">+971 00 000 0000</a></li>
-				<li><a href="mailto:care@phcx.net">care@phcx.net</a></li>
+				<li><a href="tel:+971 4 579 4300">+971 4 579 4300</a></li>
+				<li><a href="mailto:customercare@prcnhealth.com">customercare@prcnhealth.com</a></li>
 				<li><?php esc_html_e( 'Dubai, United Arab Emirates', 'phcx' ); ?></li>
 			</ul>
 		</div>
