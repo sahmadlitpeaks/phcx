@@ -93,8 +93,9 @@ function phcx_primary_menu_fallback() {
 	$items = array(
 		'#about'      => __( 'About Us', 'phcx' ),
 		'#team'       => __( 'Team', 'phcx' ),
-		'#homecare'   => __( 'Homecare Services', 'phcx' ),
-		'#telehealth' => __( 'Telehealth Services', 'phcx' ),
+		'#homecare'   => __( 'Home-Care', 'phcx' ),
+		'#telehealth' => __( 'Tele-Health', 'phcx' ),
+		'#clinic' => __( 'In-Clinic', 'phcx' ),
 		'#contact'    => __( 'Contact Us', 'phcx' ),
 	);
 
