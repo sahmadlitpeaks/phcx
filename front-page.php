@@ -16,7 +16,7 @@ get_header();
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow reveal">Personalised &amp; science-led healthcare</p>
-          <h1 class="reveal" data-delay="80">Tailored healthcare solutions <span class="accent">for your long-term health needs.</span></h1>
+          <h1 class="reveal" data-delay="80">The Middle East’s First <span class="accent">Speciality Integrative Clinic</span></h1>
           <p class="lede reveal" data-delay="160">Precision Health Clinix is a precision medicine clinic combining advanced diagnostics, DNA insights, biomarker analysis, clinical assessment, and lifestyle medicine to help each patient receive care that is tailored to their biology, goals, and long-term health needs.</p>
           <div class="hero-actions reveal" data-delay="240">
             <a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="btn btn-primary btn-pulse">Schedule a Consultation</a>
@@ -51,15 +51,6 @@ get_header();
             <div>
               <strong>Personalised plan</strong>
               <small>built around your DNA</small>
-            </div>
-          </div>
-          <div class="hero-floater hero-floater-2" aria-hidden="true">
-            <span class="floater-icon">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-            </span>
-            <div>
-              <strong>1,000+ patients</strong>
-              <small>trust our clinicians</small>
             </div>
           </div>
         </div>
@@ -101,10 +92,10 @@ get_header();
           <p>At Precision Health Clinix, precision medicine helps guide targeted recommendations across prevention, nutrition, metabolic health, IV therapy, lifestyle optimization, and long-term wellness planning.</p>
 
           <aside class="stat-grid" aria-label="Clinic at a glance">
-            <div class="stat"><strong data-count="7" data-suffix="+">0</strong><span>Years of clinical experience</span></div>
-            <div class="stat"><strong data-count="1000" data-suffix="+">0</strong><span>Patients served</span></div>
-            <div class="stat"><strong data-count="20" data-suffix="+">0</strong><span>Healthcare services offered</span></div>
-            <div class="stat"><strong>5&#9733;</strong><span>Patient-centred care</span></div>
+            <div class="stat"><strong data-count="7">0</strong><span>Senior practitioners on the Precision Global Medical Board</span></div>
+            <div class="stat"><strong data-count="15" data-suffix="+">0</strong><span>Multi-industry expert Precision Health team members</span></div>
+            <div class="stat"><strong data-count="20" data-suffix="+">0</strong><span>Specialized Biomarker & DNA Tests</span></div>
+            <div class="stat"><strong data-count="6" data-suffix="+">0</strong><span>Years of Research & Development</span></div>
           </aside>
         </div>
       </div>
@@ -117,7 +108,7 @@ get_header();
         </div>
         <div class="reveal" data-delay="120">
           <p class="eyebrow">Our Goal &amp; Vision</p>
-          <h2>Clarity today. Healthier tomorrows.</h2>
+          <h2>Making the Precision Medicine philosophy a reality.</h2>
           <div class="pillar">
             <span class="pillar-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
@@ -208,47 +199,6 @@ get_header();
       </div>
     </section>
 
-    <section class="section section-alt" id="methodology">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow">Our Core Methodology</p>
-          <h2>The Diamond System of Care</h2>
-          <p>A structured, patient-centered methodology designed to evaluate health from multiple dimensions &mdash; bringing together clinical evaluation, advanced diagnostics, lifestyle analysis, personalized interventions, and continuous follow-up.</p>
-        </header>
-
-        <div class="diamond">
-          <div class="diamond-shape reveal" aria-hidden="true">
-            <svg viewBox="0 0 320 320" width="280" height="280" class="diamond-svg">
-              <defs>
-                <linearGradient id="dg" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#00b0c0"/>
-                  <stop offset="100%" stop-color="#801014"/>
-                </linearGradient>
-              </defs>
-              <g class="diamond-rotate">
-                <polygon points="160,20 300,160 160,300 20,160" fill="url(#dg)" opacity="0.18" stroke="#801014" stroke-width="2"/>
-                <polygon points="160,70 250,160 160,250 70,160" fill="none" stroke="#00b0c0" stroke-width="1.5" opacity="0.6"/>
-              </g>
-              <circle cx="160" cy="20" r="6" fill="#801014"/>
-              <circle cx="300" cy="160" r="6" fill="#00b0c0"/>
-              <circle cx="160" cy="300" r="6" fill="#801014"/>
-              <circle cx="20" cy="160" r="6" fill="#00b0c0"/>
-              <circle cx="160" cy="160" r="10" fill="#801014" class="diamond-pulse"/>
-            </svg>
-          </div>
-          <ul class="diamond-points">
-            <li class="reveal"><div><strong>Clinical Evaluation</strong><span>In-depth review of history, symptoms, and goals.</span></div></li>
-            <li class="reveal" data-delay="80"><div><strong>Advanced Diagnostics</strong><span>DNA testing, biomarkers, and metabolic insight.</span></div></li>
-            <li class="reveal" data-delay="160"><div><strong>Lifestyle Analysis</strong><span>Sleep, nutrition, movement, stress, and recovery.</span></div></li>
-            <li class="reveal" data-delay="240"><div><strong>Personalized Interventions</strong><span>Tailored care plans aligned to your biology.</span></div></li>
-            <li class="reveal" data-delay="320"><div><strong>Continuous Follow-Up</strong><span>Measurable progress and ongoing optimization.</span></div></li>
-          </ul>
-        </div>
-
-        <p class="methodology-note">Through this model, we identify root causes, personalize care plans, and support measurable health improvements over time. The Diamond System reflects our belief that optimal health is built through a complete understanding of the individual, not only their symptoms.</p>
-      </div>
-    </section>
-
     <section id="clinic" class="section">
       <div class="container">
         <header class="section-head reveal">
@@ -275,7 +225,7 @@ get_header();
             <div class="service-body">
               <h3>Doctor Consultation &amp; Precision Medicine Assessment</h3>
               <p>A comprehensive consultation reviewing health history, symptoms, lifestyle, wellness goals, and diagnostic results &mdash; with recommendations for testing, DNA analysis, biomarkers, lifestyle interventions, IV therapy, or specialty care pathways.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book consultation <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book Now<span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -288,7 +238,7 @@ get_header();
             <div class="service-body">
               <h3>DNA Testing &amp; Genetic Reports</h3>
               <p>Specialized DNA testing through internationally accredited laboratories. Reports may offer insights into nutrition, metabolism, fitness response, vitamin needs, weight tendencies, wellness optimization, and selected health predispositions.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Learn more <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book Now<span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -301,7 +251,7 @@ get_header();
             <div class="service-body">
               <h3>Customizable IV Therapy</h3>
               <p>Clinically guided IV therapy blends tailored to each patient&rsquo;s needs &mdash; supporting hydration, energy, mineral balance, immune wellness, recovery, vitality, and overall optimization based on goals and clinical suitability.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Browse blends <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book Now<span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -314,20 +264,7 @@ get_header();
             <div class="service-body">
               <h3>Peptide Therapy Consultation</h3>
               <p>A medically supervised consultation to assess suitability, goals, and safety. Peptide-based protocols may be considered as part of personalized wellness plans supporting recovery, metabolism, healthy aging, performance, and body optimization.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Speak to a doctor <span aria-hidden="true">&rarr;</span></a>
-            </div>
-          </article>
-
-          <article class="service-card reveal" data-delay="120" style="--svc-a:#00b0c0;--svc-b:#00525c;">
-            <div class="service-media">
-              <img class="service-photo" src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=900&q=70&auto=format&fit=crop" alt="Lifestyle management" loading="lazy" referrerpolicy="no-referrer" /><span class="service-pattern" aria-hidden="true"></span>
-              <span class="service-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg></span>
-              <span class="service-tag">Lifestyle</span>
-            </div>
-            <div class="service-body">
-              <h3>Lifestyle Management</h3>
-              <p>Personalized guidance across sleep, stress, nutrition, movement, recovery, energy, and daily habits &mdash; designed to create sustainable changes that support prevention, metabolic health, performance, and wellbeing.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Start your plan <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book Now<span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -340,7 +277,7 @@ get_header();
             <div class="service-body">
               <h3>Weight &amp; Metabolic Management</h3>
               <p>Personalized weight loss, fat loss, metabolic health, and nutrition support. Work with our clinical team and dietitian on tailored guidance, meal plans, body composition goals, insulin resistance support, and condition-specific nutrition plans.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Talk to a dietitian <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book Now<span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -353,7 +290,7 @@ get_header();
             <div class="service-body">
               <h3>Sample Collection</h3>
               <p>Professional sample collection for blood tests, DNA testing, and other laboratory investigations &mdash; coordinated through approved laboratory partners as part of consultations, wellness programs, or ongoing monitoring.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Schedule collection <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book Now<span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -366,7 +303,7 @@ get_header();
             <div class="service-body">
               <h3>Nursing Services</h3>
               <p>Clinical support including vital sign checks, medication support, IV administration, sample collection, patient education, and follow-up care &mdash; coordinated with the medical team.</p>
-              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Request a nurse <span aria-hidden="true">&rarr;</span></a>
+              <a class="service-link" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Book Now<span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
         </div>
