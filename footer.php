@@ -39,7 +39,7 @@
 			<strong><?php esc_html_e( 'Get in touch', 'phcx' ); ?></strong>
 			<ul class="plain-list">
 				<li><a href="tel:+971 4 579 4300">+971 4 579 4300</a></li>
-				<li><a href="mailto:customercare@prcnhealth.com">customercare@prcnhealth.com</a></li>
+				<li><a href="mailto:contact@prcnhealth.com">contact@prcnhealth.com</a></li>
 				<li><?php esc_html_e( 'Dubai, United Arab Emirates', 'phcx' ); ?></li>
 			</ul>
 		</div>
